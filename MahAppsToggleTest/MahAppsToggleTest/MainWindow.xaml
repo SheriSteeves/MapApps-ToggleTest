@@ -1,0 +1,39 @@
+﻿<Controls:MetroWindow x:Class="MahAppsToggleTest.MainWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                      xmlns:local="clr-namespace:MahAppsToggleTest"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      Title="MainWindow"
+                      Width="800"
+                      Height="450"
+                      DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
+                      mc:Ignorable="d">
+    <StackPanel Margin="10,20">
+        <Controls:ToggleSwitch x:Name="TestControl1"
+                               HorizontalAlignment="Center"
+                               AutomationProperties.AutomationId="TestControl1ID"
+                               AutomationProperties.Name="TestControl1"
+                               IsOn="{Binding Toggle1Checked}"
+                               OffContent="Test Toggle Switch 1"
+                               OnContent="Test Toggle Switch 1" />
+        <Controls:ToggleSwitch x:Name="TestControl2"
+                               HorizontalAlignment="Center"
+                               AutomationProperties.AutomationId="TestControl2ID"
+                               AutomationProperties.Name="TestControl2"
+                               IsOn="{Binding Toggle2Checked}"
+                               OffContent="Test Toggle Switch 2"
+                               OnContent="Test Toggle Switch 2" />
+
+        <Controls:ToggleSwitch x:Name="TestControl3"
+                               HorizontalAlignment="Center"
+                               AutomationProperties.AutomationId="TestControl3ID"
+                               AutomationProperties.Name="TestControl3"
+                               IsOn="{Binding Toggle3Checked}"
+                               OffContent="Test Toggle Switch 3"
+                               OnContent="Test Toggle Switch 3" />
+     
+    </StackPanel>
+
+</Controls:MetroWindow>
